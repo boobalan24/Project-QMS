@@ -1,0 +1,163 @@
+/*Basic Reset*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  box-sizing: border-box;
+  position: relative;
+  padding: 2rem;
+}
+
+/*Header Styles*/
+.header-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.c-logo {
+  display: block;
+}
+.heading {
+  text-transform: uppercase;
+  display: inline-block;
+  color: #035397;
+}
+.secondary {
+  margin: 2rem 0;
+}
+
+/*Footer styles*/
+.footer-bx {
+  height: 10rem;
+  color: #333;
+  padding: 1rem;
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-size: 1.35rem;
+}
+
+/*Utility Class*/
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Components*/
+
+/*Button*/
+.btn-bx {
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  width: 35rem;
+  height: 4rem;
+  display: block;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background-color: #001e6c;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  margin: 4rem auto;
+  transition: all 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #022783;
+  box-shadow: 0.5rem 0.5rem 1rem #716f81;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: 0.2rem 0.2rem 0.5rem #716f81;
+  transform: translateY(0);
+}
+
+/*Inputs*/
+
+.input-bx {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lbl {
+  display: block;
+}
+
+.input {
+  width: 50%;
+  color: #555;
+  height: 4rem;
+  display: block;
+  font-size: 1.5rem;
+  font-family: inherit;
+  outline: none;
+  border: 1px solid #777;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.input:focus {
+  border-color: #79b9ec;
+  box-shadow: 0 0 1rem #79b9ec;
+}
+input[type="text"]:disabled {
+  background-color: rgb(247, 247, 247);
+}
+
+/*Text area*/
+.cr-msg {
+  resize: none;
+  height: 14rem;
+}
+
+.des-msg {
+  resize: none;
+  height: 10rem;
+}
+
+.avl-char {
+  text-align: right;
+  margin: -2rem 0 2rem 0;
+}
+
+/*Polar question radio button*/
+.pq {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.pq li:last-child {
+  margin-right: 26rem;
+}
+
+.modeBooking li:last-child {
+  margin-right: 16rem;
+}
