@@ -1,0 +1,59 @@
+.cr-form {
+  width: 55%;
+  margin: auto;
+}
+
+.short {
+  display: none;
+}
+.chp-bx {
+  display: none;
+}
+.other-pj {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .cr-form {
+    width: 95%;
+    margin: auto;
+  }
+  .input-bx {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .input {
+    width: 100%;
+  }
+  .lbl {
+    display: inline;
+  }
+  .btn {
+    width: 50%;
+  }
+  .short {
+    display: block;
+  }
+  .long {
+    display: none;
+  }
+  .pq li:last-child {
+    margin-right: 0;
+  }
+  .avl-char {
+    margin: 0;
+  }
+
+  .footer-bx {
+    height: 3rem;
+    color: #333;
+    padding: 1rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+}
